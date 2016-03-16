@@ -1,0 +1,250 @@
+@import '_main-settings';
+
+.ya-share2,
+.ya-share2 * {
+    line-height: normal;
+}
+.ya-share2 :link:hover,
+.ya-share2 :visited:hover {
+    color: #000 !important;
+}
+.ya-share2 input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    line-height: normal;
+}
+.ya-share2__container_size_m {
+    font-size: 14px;
+}
+.ya-share2__icon {
+    height: $yashare2__icon-size;
+    width: $yashare2__icon-size;
+    background-size: $yashare2__icon-size;
+}
+.ya-share2__title {
+    line-height: 24px;
+}
+.ya-share2__item {
+    margin: 5px 6px 5px 0;
+}
+.ya-share2__counter {
+    font-size: 14px;
+    padding: 0px 10px;
+    text-align: center;
+    max-height: $yashare2__icon-size;
+    line-height: $yashare2__icon-size;
+    font-family: $yashare2__font;
+    font-weight: 600;
+
+    &:before {
+        margin-left: -10px;
+    }
+}
+
+.ya-share2__popup {
+    top: 28px;
+    padding: 5px 10px;
+}
+.ya-share2__input_copy {
+    width: 140px;
+}
+.ya-share2__badge + .ya-share2__title {
+    margin-left: 10px;
+}
+
+.ya-share2__list_direction_horizontal > .ya-share2__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.ya-share2__list_direction_horizontal > .ya-share2__item > .ya-share2__link > .ya-share2__title {
+    display: none;
+}
+.ya-share2__list_direction_vertical > .ya-share2__item {
+    display: block;
+    margin-right: 0;
+}
+.ya-share2__list_direction_vertical > .ya-share2__item > .ya-share2__link > .ya-share2__badge > .ya-share2__counter {
+    display: none;
+}
+
+.ya-share2__list {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.ya-share2__item {
+    font-family: inherit, sans-serif;
+    display: inline-block;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+.ya-share2__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ya-share2__badge {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.ya-share2__icon {
+    display: inline-block;
+    vertical-align: top;
+    &:active {
+        box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.1);
+    }
+}
+.ya-share2__counter {
+    display: none;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 2px;
+        bottom: 2px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX///+nxBvIAAAAAXRSTlMz/za5cAAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=") 0 0 repeat-y;
+    }
+}
+
+.ya-share2__counter_visible {
+    display: inline-block;
+}
+.ya-share2__title {
+    display: inline-block;
+    color: #000;
+    vertical-align: bottom;
+    &:hover {
+        color: #f00;
+    }
+}
+.ya-share2__item_more {
+    position: relative;
+    &:hover {
+        opacity: 1;
+    }
+}
+.ya-share2__icon_more {
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    position: relative;
+    &:before {
+        content: '…';
+        color: #a0a0a0;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        line-height: 18px;
+    }
+}
+.ya-share2__popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,0.4);
+    display: none;
+    border: 1px solid #e6e6e6;
+    z-index: 9999;
+    background-color: #fff;
+}
+.ya-share2__popup .ya-share2__badge,
+.ya-share2__popup .ya-share2__title {
+    vertical-align: middle
+}
+.ya-share2__popup_visible {
+    display: block;
+}
+.ya-share2__link_copy {
+    margin-top: 6px;
+}
+.ya-share2__popup_clipboard .ya-share2__input_copy,
+.ya-share2__link_copy {
+    display: none;
+}
+.ya-share2__popup_clipboard .ya-share2__link_copy {
+    display: inline-block;
+}
+
+@if $yashare2__blogger == true { 
+    @import 'services/blogger';
+}
+@if $yashare2__delicious == true {
+    @import 'services/delicious';
+}
+@if $yashare2__digg == true {
+    @import 'services/digg';
+}
+@if $yashare2__evernote == true {
+    @import 'services/evernote';
+}
+@if $yashare2__facebook == true {
+    @import 'services/facebook';
+}
+@if $yashare2__gplus == true {
+    @import 'services/gplus';
+}
+@if $yashare2__linkedin == true {
+    @import 'services/linkedin';
+}
+@if $yashare2__livejournal == true {
+    @import 'services/lj';
+}
+@if $yashare2__moimir == true {
+    @import 'services/moimir';
+}
+@if $yashare2__odnoklassniki == true {
+    @import 'services/odnoklassniki';
+}
+@if $yashare2__pinterest == true {
+    @import 'services/pinterest';
+}
+@if $yashare2__pocket == true {
+    @import 'services/pocket';
+}
+@if $yashare2__qzone == true {
+    @import 'services/qzone';
+}
+@if $yashare2__reddit == true {
+    @import 'services/reddit';
+}
+@if $yashare2__renren == true {
+    @import 'services/renren';
+}
+@if $yashare2__sinaWeibo == true {
+    @import 'services/sinaWeibo';
+}
+@if $yashare2__surfingbird == true {
+    @import 'services/surfingbird';
+}
+@if $yashare2__tencentWeibo == true {
+    @import 'services/tencentWeibo';
+}
+@if $yashare2__tubmlr == true {
+    @import 'services/tubmlr';
+}
+@if $yashare2__twitter == true {
+    @import 'services/twitter';
+}
+@if $yashare2__viber == true {
+    @import 'services/viber';
+}
+@if $yashare2__vkontakte == true {
+    @import 'services/vkontakte';
+}
+@if $yashare2__whatsapp == true {
+    @import 'services/whatsapp';
+}
