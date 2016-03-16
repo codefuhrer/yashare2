@@ -1,0 +1,25 @@
+{
+  "name": "yashare2",
+  "version": "0.0.1",
+  "description": "Yandex's share block styles",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codefuhrer/yashare2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codefuhrer/yashare2/issues"
+  },
+  "keywords": [
+    "yandex",
+    "share"
+  ],
+  "author": "Codefuhrer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codefuhrer/yashare2/issues"
+  },
+  "homepage": "https://github.com/codefuhrer/yashare2#readme"
+}
