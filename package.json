@@ -18,8 +18,9 @@
   ],
   "author": "Codefuhrer",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codefuhrer/yashare2/issues"
-  },
-  "homepage": "https://github.com/codefuhrer/yashare2#readme"
+  "homepage": "https://github.com/codefuhrer/yashare2#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
 }
