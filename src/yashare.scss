@@ -221,6 +221,9 @@
 @if $yashare2__surfingbird == true {
     @import 'services/surfingbird';
 }
+@if $yashare2__telegram == true {
+    @import 'services/telegram';
+}
 @if $yashare2__tencentWeibo == true {
     @import 'services/tencentWeibo';
 }
