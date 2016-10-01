@@ -167,8 +167,11 @@
     display: inline-block;
 }
 
-@if $yashare2__blogger == true { 
+@if $yashare2__blogger == true {
     @import 'services/blogger';
+}
+@if $yashare2__collections == true {
+    @import 'services/collections';
 }
 @if $yashare2__delicious == true {
     @import 'services/delicious';
