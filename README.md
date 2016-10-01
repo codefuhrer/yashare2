@@ -1,36 +1,40 @@
 ## yashare2
-> **Внимание:** этот проект никак не связан с Яндексом.
+> **Note:** This project is not affiliated with Yandex.
 
-### Что это?
-Готовые стили для [блока «Поделиться»](https://tech.yandex.ru/share/) Яндекса.
+### What is it?
+These are ready styles for Yandex [sharing widget](https://tech.yandex.ru/share/).
 
-![Превью](/demo.png)
+![Preview](/demo.png)
 
-### Зачем?
-Чтобы использовать блок со своими стилями, не пользуясь сторонним CSS. Специально для этого предусмотрена загрузка блока с атрибутом `data-bare` (см. [документацию](https://tech.yandex.ru/share/doc/dg/add-docpage/)).
+### What for?
+So that you can style the widget any way you want, without having to load external CSS. Especially for this case there is a `data-bare` attribute (see [docs](https://tech.yandex.ru/share/doc/dg/add-docpage/)).
 
-### Как?
-1. Подключить блок на страницу с указанием атрибута `data-bare`:
-  ```html
-  <script src="//yastatic.net/share2/share.js" async="async"></script>
-  <div class="ya-share2" data-services="..." data-bare></div>
-  ```
+### How?
+Install the widget and add the `data-bare` attribute:
+```html
+<script async src="//yastatic.net/share2/share.js"></script>
+<div data-bare class="ya-share2" data-services="desired services list"></div>
+```
 
-2. Установить пакет:
-  ```bash
-  npm install yashare2 --save
-  ```
+Install this package:
+```bash
+npm install yashare2 --save
+```
 
-3. Подключить этот репозиторий в свой SCSS.
+Include to your app's styles.
+```sass
+@import '../../../node_modules/yashare2/src/yashare';
+```
 
-  Попутно можно менять шрифт, размеры кнопок и отключить ненужные сервисы:
-  ```sass
-  $yashare2__icon-size: 24px;
-  $yashare2__font: 'PT Serif', Georgia, serif;
+### What about customizing?
+You can change some essential styles by changing the variables:
+```sass
+// Counter font family and size:
+$yashare2__font: 'PT Serif', Georgia, serif;
+$yashare2__icon-size: 24px;
 
-  $yashare2__blogger = true;
-  $yashare2__evernote = true;
-  $yashare2__moimir = false;
-
-  @import '../../../node_modules/yashare2/src/yashare';
-  ```
+// Enable and disable the services you need:
+$yashare2__blogger = true;
+$yashare2__evernote = true;
+$yashare2__moimir = false;
+```
