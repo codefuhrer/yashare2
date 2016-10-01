@@ -34,7 +34,7 @@ $yashare2__font: 'PT Serif', Georgia, serif;
 $yashare2__icon-size: 24px;
 
 // Enable and disable the services you need:
-$yashare2__blogger = true;
-$yashare2__evernote = true;
-$yashare2__moimir = false;
+$yashare2__blogger: true;
+$yashare2__evernote: true;
+$yashare2__moimir: false;
 ```
