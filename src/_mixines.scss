@@ -1,0 +1,10 @@
+@mixin yashare_service($name, $color, $image) {
+    .ya-share2__item_service_#{$name} {
+        & .ya-share2__badge {
+            background-color: $color;
+        }
+        & .ya-share2__icon {
+            background-image: $image;
+        }
+    }
+}
