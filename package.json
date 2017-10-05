@@ -7,10 +7,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codefuhrer/yashare2.git"
+    "url": "git://github.com/ingria/yashare2.git"
   },
   "bugs": {
-    "url": "https://github.com/codefuhrer/yashare2/issues"
+    "url": "https://github.com/ingria/yashare2/issues"
   },
   "keywords": [
     "yandex",
@@ -18,7 +18,7 @@
   ],
   "author": "Codefuhrer",
   "license": "MIT",
-  "homepage": "https://github.com/codefuhrer/yashare2#readme",
+  "homepage": "https://github.com/ingria/yashare2#readme",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0"
